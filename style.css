@@ -1,0 +1,138 @@
+/* Resetting all margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.guvi-logo {
+  height: 40px;
+  aspect-ratio: auto 1200 / 249;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-grow: 1;
+  justify-content: flex-end;
+  color: #6b7280;
+  position: relative;
+}
+
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px 0;
+  position: relative;
+}
+
+
+.dropdown-header.active {
+  border-bottom: 2px solid #0dba4b;
+}
+
+
+.chevron-icon {
+  stroke: #6b7280;
+  transition: transform 0.5s ease-in-out;
+}
+
+.dropdown:hover .chevron-icon {
+  transform: rotate(180deg);
+}
+
+
+.dropdown-content {
+  position: absolute;
+  background-color: #ffffff;
+  color: #6b7280;
+  width: 250px;
+  border-radius: 8px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s, transform 0.3s;
+  transform: translateY(-10px);
+  z-index: 99;
+  padding: 15px; 
+}
+
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 10px; 
+  text-decoration: none;
+  color: #6b7280;
+  border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.login-btn {
+  color: #0dba4b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+.signup-btn {
+  background-color: #22c55e;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+.signup-btn:hover {
+  background-color: #388e3c;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f8f8f8;
+  color: #6b7280;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

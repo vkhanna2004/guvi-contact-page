@@ -17,10 +17,7 @@
 
         <nav class="nav-links">
           <div class="dropdown">
-            <div class="dropdown-header">
-              Courses
-            </div>
-            
+            <div class="dropdown-header">Courses</div>
           </div>
 
           <div class="dropdown">
@@ -69,8 +66,15 @@
               </svg>
             </div>
             <div class="dropdown-content">
-              <a href="#">Practice 1</a>
-              <a href="#">Practice 2</a>
+              <a href="#">
+                <p class="title">Codekata</p>
+                <p class="subtitle">Sharpen your coding skills, prepare for interviews</p>
+              </a>
+              <!-- add more like above  -->
+              <!-- <a href="#">
+                <p class="title">Codekata</p>
+                <p class="subtitle">Sharpen your coding skills, prepare for interviews</p>
+              </a> -->
             </div>
           </div>
 
@@ -123,74 +127,240 @@
           </div>
 
           <div class="auth-buttons">
-            
             <a href="#" class="login-btn">Login</a>
-            
-            
-          <a href="#" class="signup-btn">Sign Up</a>
-            
+
+            <a href="#" class="signup-btn">Sign Up</a>
           </div>
         </nav>
 
-        <div class="auth-buttons">
-        </div>
+        <div class="auth-buttons"></div>
       </div>
     </header>
 
     <div class="container">
+      
+      <!-- Left Section: Contact Info -->
       <div class="contact-info">
-        <h2>Contact Us</h2>
-        <p>
+        <h2 style="font-size: 2.2rem; font-weight: 700px;">Contact Us</h2>
+        <p style="font-size: 1.1rem; font-weight: 400px; color:#000000">
           Let us know your queries, feedbacks, and enquiries. We are here to
           support you 24/7.
         </p>
 
-        <div class="contact-item">
-          <img src="phone-icon.png" alt="Phone Icon" class="icon" />
+        <hr class="divider" />
+        <div class="info-item">
+          <img
+            src="https://www.guvi.in/assets/Dln4fx0b-phone.webp"
+            alt="Phone Icon"
+            class="icon"
+          />
           <span>+91 9736097320</span>
         </div>
+        <hr class="divider" />
 
-        <div class="contact-item">
-          <img src="email-icon.png" alt="Email Icon" class="icon" />
+        <div class="info-item">
+          <img
+            src="https://www.guvi.in/assets/DRGUPHXp-message.webp"
+            alt="Email Icon"
+            class="icon"
+          />
           <span>cs@guvi.in</span>
         </div>
+        <hr class="divider" />
 
-        <div class="address">
-          <h3>Visit us in Chennai @</h3>
-          <p>
-            IITM Research park - phase 2, module #9, 3rd floor, D block, Kanagam
-            Rd, Tharamani, Chennai, Tamil Nadu 600113
-          </p>
+        <div class="info-item">
+          <img
+            src="https://www.guvi.in/assets/BrgqbmZY-location.webp"
+            alt="Location Icon"
+            class="icon"
+          />
+          <span
+            >IITM Research Park - Phase 2, Module #9, 3rd Floor, D Block,
+            Kanagam Rd, Chennai, Tamil Nadu 600113</span
+          >
+        </div>
 
-          <h3>Visit us in Noida @</h3>
-          <p>
-            A11, HCL Corporation Pvt. Ltd, Block A, Sector 3, Noida, Uttar
-            Pradesh 201307
-          </p>
+        <div class="info-item" style="padding-left: 40px;">
+          <span
+            >A11, HCL Corporation Pvt. Ltd, Block A, Sector 3, Noida, Uttar
+            Pradesh 201307</span
+          >
         </div>
       </div>
 
-      <div class="form-section">
+      <!-- Right Section: Contact Form -->
+      <div class="contact-form">
         <h2>Say <span class="highlight">Hello!</span></h2>
-        <p>Feel free to stop by and say hi!</p>
+        
         <form>
-          <input type="text" name="name" placeholder="Name *" required />
-          <input type="email" name="email" placeholder="E-mail id *" required />
+          <label for="name">Name *</label>
           <input
             type="text"
-            name="contact"
-            placeholder="Contact Number *"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
             required
           />
-          <input type="text" name="subject" placeholder="Subject" required />
-          <textarea name="message" placeholder="Message *" required></textarea>
-          <button type="submit">Send</button>
+
+          <label for="email">E-mail ID *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="contact">Contact Number *</label>
+          <input
+            type="tel"
+            id="contact"
+            name="contact"
+            placeholder="Enter your contact number"
+            required
+          />
+
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Enter subject"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your message"
+            required
+          ></textarea>
+
+          <button type="submit" style="background-color: #0dba4b;">Send</button>
         </form>
       </div>
+
+      
     </div>
 
-    <footer>
-      <p>© GUVI | Skill Up. Level Up.</p>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3 class="footer-title">Zen Class</h3>
+          <ul>
+            <li>Full Stack Development</li>
+            <li>Automation & Testing</li>
+            <li>Data Science</li>
+            <li>UI/UX</li>
+            <li>DevOps</li>
+            <li>Data Engineering</li>
+            <li>Business Analytics with Digital Marketing</li>
+            <li>All Programs</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Popular Courses</h3>
+          <ul>
+            <li>Python – IIT-M Pravartak Certified</li>
+            <li>Java</li>
+            <li>Mobile Hacking</li>
+            <li>C Programming</li>
+            <li>AWS</li>
+            <li>Angular</li>
+            <li>Dark Web</li>
+            <li>All Courses</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Self-Paced Courses</h3>
+          <ul>
+            <li>Premium Pass</li>
+            <li>Courses Library</li>
+            <li>Free Library</li>
+            <li>Combos</li>
+          </ul>
+
+          <h3 class="footer-title">Practice Platforms</h3>
+          <ul>
+            <li>Codekata</li>
+            <li>Webkata</li>
+            <li>Debugging</li>
+            <li>IDE</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Products</h3>
+          <ul>
+            <li>HackerKid</li>
+            <li>Placement Preparation</li>
+            <li>GUVI for Corporates</li>
+          </ul>
+
+          <h3 class="footer-title">Resources</h3>
+          <ul>
+            <li>Learn Hub <span class="new-badge">New</span></li>
+            <li>Blog</li>
+            <li>Web Stories</li>
+            <li>Forum</li>
+            <li>Rewards</li>
+            <li>Refer a friend</li>
+            <li>Become an Affiliate</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Company</h3>
+          <ul>
+            <li>Refund Policy</li>
+            <li>FAQs</li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          GUVI (Grab Your Vernacular Imprint) Geek Network Private Limited is a
+          leading online learning and skills development company, incubated by
+          IIT Madras and IIM Ahmedabad.
+        </p>
+        <p>
+          Established in 2014 and acquired by the HCL Group in 2022, GUVI is
+          dedicated to providing effective and high-quality learning and
+          skilling programs that transcend language barriers in technology
+          education. GUVI today is trusted by over 3 million learners and 2000+
+          corporate partners.
+        </p>
+
+        <div class="footer-links">
+          <button class="footer-button">Refer & Earn</button>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+            alt="Google Play"
+            class="playstore"
+          />
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="footer-bottom-links">
+          <a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a>
+          <p>© GUVI Geeks Network Pvt. Ltd.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
